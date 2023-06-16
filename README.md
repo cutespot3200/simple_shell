@@ -225,11 +225,11 @@ Example:
 $ ./shello
 $ alias show=ls
 $ show
-AUTHORS            builtins_help_2.c  errors.c         linkedlist.c        shell.h       test
-README.md          env_builtins.c     getline.c        locate.c            shellby
-alias_builtins.c   environ.c          helper.c         main.c              split.c
-builtin.c          err_msgs1.c        helpers_2.c      man_1_simple_shell  str_funcs1.c
-builtins_help_1.c  err_msgs2.c        input_helpers.c  proc_file_comm.c    str_funcs2.c
+AUTHORS             ingrained_assist_1.c    err.c             connect_list.c        shello.h  
+README.md           environ_ingrained.c     get_line.c        loc.c            
+anonym_built.c      env.c                   assist.c          core.c             
+ingrained.c         error_calls.c           helper.c          slit.c                 stw_func.c
+ingrained_assist.c  error_calls_2.c        process_assist.c   proc_file_command.c    stw_func2.c
 ```
 
 #### exit
