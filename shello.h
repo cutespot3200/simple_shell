@@ -1,5 +1,5 @@
-#ifndef _SHELL_H_
-#define _SHELL_H_
+#ifndef _SHELLO_H_
+#define _SHELLO_H_
 
 
 #include <stdio.h>
@@ -69,13 +69,28 @@ typedef struct alias_s
 
 /* Functions for String Type*/
 
+/* Compares 2 strings */
 int _strncmp(const char *s1, const char *s2, size_t n);
+
+/* Counts the number of characters of a string */
 int _strlen(const char *s);
+
+/* Compares 2 strings */
 int _strcmp(char *s1, char *s2);
+
+/* Concatenates two strings */
 char *_strcat(char *dest, const char *src);
+
+/*returns the length of the starting substring of the string*/
 int _strspn(char *s, char *accept);
+
+/*finds the first occurrence of a character in a string*/
 char *_strchr(char *s, char c);
+
+/*function appends the first count characters of string2 to string1*/
 char *_strncat(char *dest, const char *src, size_t n);
+
+/*copies the string pointed by source*/
 char *_strcpy(char *dest, const char *src);
 
 
@@ -140,7 +155,7 @@ int shello_env(char **args, char __attribute__((__unused__)) **front);
 int shello_cd(char **args, char __attribute__((__unused__)) **front);
 int shello_alias(char **args, char __attribute__((__unused__)) **front);
 int shello_unsetenv(char **args, char __attribute__((__unused__)) **front);
-int (*go_builtin(char *command))(char **args, char **front);
+int (*get_builtin(char *command))(char **args, char **front);
 
 int proc_file_command(char *file_path, int *exe_ret);
-#endif
+#endif /*_SHELLO_H_*/
