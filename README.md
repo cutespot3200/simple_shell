@@ -293,3 +293,8 @@ $
 ## Acknowledgements :pray:
 
 **Shello** emulates basic functionality of the **sh** shell. This README borrows form the Linux man pages [sh(1)](https://linux.die.net/man/1/sh) and [dash(1)](https://linux.die.net/man/1/dash).
+
+<p align="center">
+  <img src="https://assets.imaginablefutures.com/media/images/ALX_Logo.max-200x150.png" alt="ALX|Holberton School logo">
+</p>
+
