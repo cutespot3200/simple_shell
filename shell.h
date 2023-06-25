@@ -1,5 +1,5 @@
-#ifndef _SHELLO_H_
-#define _SHELLO_H_
+#ifndef _SHELL_H_
+#define _SHELL_H_
 
 
 #include <stdio.h>
@@ -28,9 +28,6 @@ extern char **environ;
 /* Glo program name */
 char *name;
 
-/* Glo aliases linked list */
-alias_t *aliases;
-
 /**
  * struct builtin_s -  struct type definin builtins command.
  * @name: nomenclature of the builtin command.
@@ -40,7 +37,7 @@ typedef struct builtin_s
 {
 	char *name;
 	int (*f)(char **argv, char **front);
-} builtin_t
+} builtin_t;
 
 /**
  * struct list_s -  struct type definin linked list.
@@ -66,6 +63,8 @@ typedef struct alias_s
 	struct alias_s *next;
 } alias_t;
 
+/* Glo aliases linked list */
+alias_t *aliases;
 
 /* Functions for String Type*/
 
@@ -139,7 +138,7 @@ char *go_args(char *line, int *exe_ret);
 
 /*ERRATUM HANDLING*/
 char *err_127(char **args);
-int make_err(char **args, int err);
+int make_error(char **args, int err);
 char *err_126(char **args);
 char *err_1(char **args);
 char *err_env(char **args);
@@ -158,4 +157,4 @@ int shello_unsetenv(char **args, char __attribute__((__unused__)) **front);
 int (*get_builtin(char *command))(char **args, char **front);
 
 int proc_file_command(char *file_path, int *exe_ret);
-#endif /*_SHELLO_H_*/
+#endif /*_SHELL_H_*/
