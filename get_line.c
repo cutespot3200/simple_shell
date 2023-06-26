@@ -88,14 +88,14 @@ void assign_lineptr(char **lineptr, size_t *n, char *buffer, size_t b)
 }
 
 /**
- * getline - skim input from a stream.
+ * get_line - skim input from a stream.
  * @lineptr: Buffer to store the input.
  * @n: Size of lineptr.
  * @stream: Stream to read from.
  *
  * Return: Number of bytes read.
  */
-ssize_t getline(char **lineptr, size_t *n, FILE *stream)
+ssize_t get_line(char **lineptr, size_t *n, FILE *stream)
 {
 	static ssize_t input;
 	ssize_t rot;
