@@ -95,7 +95,7 @@ char *_strcpy(char *dest, const char *src);
 
 /*PRINCIPAL ASSISTANTS*/
 char *_ita(int num);
-ssize_t get_line(char **lineptr, size_t *n, FILE *stream);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 void free_list(list_t *head);
 int implement(char **args, char **front);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
